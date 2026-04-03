@@ -1,0 +1,160 @@
+// src/config/networks.js
+// Central list of supported networks (EVM + non‑EVM). Used by the UI dropdowns.
+export const NETWORKS = [
+  // ─── Existing EVM networks -------------------------------------------------
+  {
+    id: 1,
+    name: 'Ethereum (ETH)',
+    symbol: 'ETH',
+    rpc: 'https://rpc.ankr.com/eth',
+    explorer: 'https://etherscan.io',
+    type: 'evm',
+  },
+  {
+    id: 56,
+    name: 'BNB Smart Chain (BNB)',
+    symbol: 'BNB',
+    rpc: 'https://bsc-dataseed1.binance.org',
+    explorer: 'https://bscscan.com',
+    type: 'evm',
+  },
+  {
+    id: 8453,
+    name: 'Base',
+    symbol: 'BASE',
+    rpc: 'https://mainnet.base.org',
+    explorer: 'https://basescan.org',
+    type: 'evm',
+  },
+  {
+    id: 0, // placeholder for Monad (custom chain)
+    name: 'Monad',
+    symbol: 'MONAD',
+    rpc: 'https://rpc.monad.xyz',
+    explorer: '',
+    type: 'evm',
+  },
+  {
+    id: 0, // placeholder for TON (non‑EVM, handled separately)
+    name: 'TON',
+    symbol: 'TON',
+    rpc: 'https://toncenter.com/api/v2/getAddressBalance',
+    explorer: 'https://tonscan.org',
+    type: 'ton',
+  },
+  {
+    id: 0, // placeholder for TRX (non‑EVM)
+    name: 'Tron (TRX)',
+    symbol: 'TRX',
+    rpc: 'https://api.trongrid.io',
+    explorer: 'https://tronscan.org',
+    type: 'tron',
+  },
+  // ─── New EVM‑compatible networks ------------------------------------------
+  {
+    id: 137,
+    name: 'Polygon (MATIC)',
+    symbol: 'MATIC',
+    rpc: 'https://polygon-rpc.com',
+    explorer: 'https://polygonscan.com',
+    type: 'evm',
+  },
+  {
+    id: 250,
+    name: 'Fantom (FTM)',
+    symbol: 'FTM',
+    rpc: 'https://rpcapi.fantom.network',
+    explorer: 'https://ftmscan.com',
+    type: 'evm',
+  },
+  {
+    id: 43114,
+    name: 'Avalanche (AVAX)',
+    symbol: 'AVAX',
+    rpc: 'https://api.avax.network/ext/bc/C/rpc',
+    explorer: 'https://snowtrace.io',
+    type: 'evm',
+  },
+  {
+    id: 2506,
+    name: 'Cronos (CRO)',
+    symbol: 'CRO',
+    rpc: 'https://evm-cronos.crypto.org',
+    explorer: 'https://cronoscan.com',
+    type: 'evm',
+  },
+  {
+    id: 1284,
+    name: 'Moonbeam (GLMR)',
+    symbol: 'GLMR',
+    rpc: 'https://rpc.api.moonbeam.network',
+    explorer: 'https://moonbeam.moonscan.io',
+    type: 'evm',
+  },
+  {
+    id: 66,
+    name: 'OKExChain (OKT)',
+    symbol: 'OKT',
+    rpc: 'https://exchainrpc.okex.org',
+    explorer: 'https://www.oklink.com/okexchain',
+    type: 'evm',
+  },
+  {
+    id: 100,
+    name: 'xDai (GNO)',
+    symbol: 'GNO',
+    rpc: 'https://rpc.gnosischain.com',
+    explorer: 'https://blockscout.com/xdai/mainnet',
+    type: 'evm',
+  },
+  {
+    id: 1285,
+    name: 'Moonriver (MOVR)',
+    symbol: 'MOVR',
+    rpc: 'https://rpc.api.moonriver.moonbeam.network',
+    explorer: 'https://moonriver.moonscan.io',
+    type: 'evm',
+  },
+  {
+    id: 42161,
+    name: 'Arbitrum One (ARB)',
+    symbol: 'ARB',
+    rpc: 'https://arb1.arbitrum.io/rpc',
+    explorer: 'https://arbiscan.io',
+    type: 'evm',
+  },
+  {
+    id: 42170,
+    name: 'Arbitrum Nova (ARB)',
+    symbol: 'ARB',
+    rpc: 'https://nova.arbitrum.io/rpc',
+    explorer: 'https://nova.arbiscan.io',
+    type: 'evm',
+  },
+  // ─── Additional non‑EVM networks ----------------------------------------
+  {
+    id: 0,
+    name: 'SUI',
+    symbol: 'SUI',
+    rpc: 'https://fullnode.mainnet.sui.io:443',
+    explorer: 'https://explorer.sui.io',
+    type: 'sui',
+  },
+  {
+    id: 0,
+    name: 'SEI',
+    symbol: 'SEI',
+    rpc: 'https://evm.sei.io', // SEI is EVM‑compatible, chainId 1329
+    explorer: 'https://seitrace.com',
+    type: 'evm',
+    chainId: 1329,
+  },
+  {
+    id: 0,
+    name: 'Dogecoin (DOGE)',
+    symbol: 'DOGE',
+    rpc: 'https://doge1.trezor.io', // public Dogecoin RPC (non‑EVM)
+    explorer: 'https://dogechain.info',
+    type: 'doge',
+  },
+];
